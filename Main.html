@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Other Wave</title>
+    <link rel="shortcut icon" href="./styles/images/Logo.ico" type="./images/Logo.ico">
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <script type="text/javascript">
+      function OpenBlock(elm1,elm2){
+          display = document.getElementById(elm1).style.display;
+          if(display=='none'){
+             document.getElementById(elm1).style.display='block';
+             document.getElementById(elm2).style.display='none';
+          }else{
+             document.getElementById(elm1).style.display='none';
+             document.getElementById(elm2).style.display='block';
+          }
+      }
+
+      function ChatInput() {
+        var elem = document.getElementById('usersfield');
+        var descript = elem.textContent;
+        elem.value = "";
+        elem.value = "";
+      }
+
+      function pressed(e) {
+        if ( (window.event ? event.keyCode : e.which) == 13) { 
+            ChatInput()
+            }
+          }
+
+      </script>
+      
+
+  </head>
+ <body>
+   <div >
+      <div class="top">
+
+        <img src="./styles/images/Logo.png" width="60" height="60" alt="Logo">
+        <a class="text_logo" href="#">OTHER WAVE</a>
+        <textarea class="nickname" placeholder="set your nickname">Amwap</textarea>
+
+      </div>
+
+      <div id="chat" style="display: block;" class="chat_square">
+
+        <textarea id="usersfield" class="chat_input" type="text" weight="100" onkeydown="pressed(event)"></textarea>
+
+        <div class="chat_top">
+          <h1 class="text_online_chat">Online chat</h1>
+          <div class="close_chat_button">
+            <a href="#" onclick="OpenBlock('chat', 'msg')" >
+              <img src="./styles/images/exit.png" width="30" height="30" alt="Close chat">
+            </a>
+          </div>
+
+        </div>
+
+        <div class="chat_button">
+          <a href="#" onclick="ChatInput()">
+            <img src="./styles/images/send arrow.png" width="40" height="43" alt="Enter">
+          </a>
+        </div >
+        
+      </div>
+
+      <div id="msg" style="display: block;" class="hidden_chat">
+        <a class="login" href="#" onclick="OpenBlock('chat', 'msg')">
+          <img src="./styles/images/msg.png" width="60" height="60" alt="Online Chat">
+        </a>
+        
+      </div>
+
+
+  </div>
+ </body>
+</html>
