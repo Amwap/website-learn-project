@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Other Wave</title>
+    <link rel="shortcut icon" href="./styles/images/title.png" >
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./scripts/parallax.js"></script>
+    <script src="./scripts/script.js"></script>
+  </head>
+ <body>
+  <div class="mouse_parallax_background"></div>
+
+  <div >
+    <img src="./styles/images/Logo.png" class="logo" alt="Other Wave">
+
+   
+    <div id="chat" class="chat_square">
+      <textarea class="chat_input" type="text" ></textarea>
+      <div class="chat_top">
+        <h1 class="text_online_chat">Online chat</h1>
+        
+        <div class="close_chat_button">
+          <a href="#" onclick="OpenBlock('chat', 'msg')" >
+            <img src="./styles/images/exit.png" width="30" height="30" alt="Close chat">
+          </a>
+        </div>
+      </div>
+      <div id="message_field_id" class="message_field"></div>
+    </div>
+
+    <div id="msg" class="hidden_chat">
+      <a class="login" href="#" onclick="OpenBlock('chat', 'msg')">
+        <img src="./styles/images/msg.png"  width="60" height="60" alt="Online Chat">
+      </a>
+    </div>
+  </div>
+  
+  
+    
+  </body>
+</html>
