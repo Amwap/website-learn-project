@@ -9,35 +9,43 @@
     <script src="./scripts/parallax.js"></script>
     <script src="./scripts/script.js"></script>
   </head>
- <body>
+<body>
+  <div>
+
+    
+  </div>
   <div class="mouse_parallax_background"></div>
-
-  <div >
-    <img src="./styles/images/Logo.png" class="logo" alt="Other Wave">
-
-   
-    <div id="chat" class="chat_square">
-      <textarea class="chat_input" type="text" ></textarea>
-      <div class="chat_top">
-        <h1 class="text_online_chat">Online chat</h1>
-        
-        <div class="close_chat_button">
-          <a href="#" onclick="OpenBlock('chat', 'msg')" >
-            <img src="./styles/images/exit.png" width="30" height="30" alt="Close chat">
-          </a>
-        </div>
-      </div>
-      <div id="message_field_id" class="message_field"></div>
-    </div>
-
-    <div id="msg" class="hidden_chat">
-      <a class="login" href="#" onclick="OpenBlock('chat', 'msg')">
-        <img src="./styles/images/msg.png"  width="60" height="60" alt="Online Chat">
-      </a>
-    </div>
+  <div class="news_window">
+    <img src="./styles/images/News.png" class="news_img" >
   </div>
   
   
+  
+  <!-- <div class="news_window"></div> -->
+  <!-- <div class="mouse_parallax"></div> -->
+    <div>
+      <img src="./styles/images/Logo.png" class="logo" alt="Other Wave">
+
     
-  </body>
+      <div id="chat" class="chat_square">
+        <textarea class="chat_input" type="text" ></textarea>
+        <div class="chat_top">
+          <h1 class="text_online_chat">Online chat</h1>
+          
+          <div class="close_chat_button">
+            <a href="#" onclick="OpenBlock('chat', 'msg')" >
+              <img src="./styles/images/exit.png" width="30" height="30" alt="Close chat">
+            </a>
+          </div>
+        </div>
+        <div id="message_field_id" class="message_field"></div>
+      </div>
+
+      <div id="msg" class="hidden_chat">
+        <a class="login" href="#" onclick="OpenBlock('chat', 'msg')">
+          <img src="./styles/images/msg.png"  width="60" height="60" alt="Online Chat">
+        </a>
+      </div>
+    </div>
+</body>
 </html>

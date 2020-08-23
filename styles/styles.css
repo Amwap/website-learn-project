@@ -1,10 +1,9 @@
 body {
     /* background-image: url("./images/cool_bg.png"); */
-    /* background-color: #000000; */
+    background-color: #000000;
     /* background-size: 100%; */
     /* background-repeat: no-repeat; */
-    display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
     height: 100%;
     overflow: hidden;
@@ -39,13 +38,12 @@ body {
 
 .mouse_parallax_background{
   position: absolute;
-  z-index: -1;
   width: 110%;
   height: 110%;
+  z-index:-1;
   background-image: url("./images/cool_bg.png");
   background-position: center center;
   background-size: cover;
-  transform: translate(-123, -21);
 }
 
 
@@ -91,7 +89,17 @@ body {
   background: transparent;  /* опционально */
 }
 
+.news_window{
+  position: absolute;
+  top: 2%;
+  left: 13%;
+  
 
+}
+.news_img{
+  width: 750px;
+  
+}
 
 .chat_input{
   position: absolute;
