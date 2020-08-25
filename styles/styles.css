@@ -1,192 +1,109 @@
 body {
-    /* background-image: url("./images/cool_bg.png"); */
-    background-color: #000000;
-    /* background-size: 100%; */
-    /* background-repeat: no-repeat; */
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    overflow: hidden;
-    margin:0;
-
-  }
-
-  h1{
-    color: white;
-    font-weight: normal;
-    font-family: "GOST_type_A";
-  }
-
-  A { text-decoration: none; }
-  A:hover { text-decoration: underline;}
-
-.logo{
-  width: 7%;
-  position: absolute;
-  left: 2%;
-  top: 2%
+  background-color: #ffffff;
+  height: 100vh;
+  margin:0;
 }
 
-.mouse_parallax{
-  /* position: relative; */
-  display: flex;
-  /* align-items: center;
-  justify-content: center; */
-  height: 100%;
-  overflow: hidden;
+@font-face {
+  font-family: 'Lucida Sans';
+  src: url('./fonts/Roboto-Thin.ttf'); /* IE 9 Compatibility Mode */
+  font-weight: normal;
+}
+h1{
+  font-family: 'Lucida Sans';
 }
 
-.mouse_parallax_background{
-  position: absolute;
-  width: 110%;
-  height: 110%;
-  z-index:-1;
-  background-image: url("./images/cool_bg.png");
-  background-position: center center;
-  background-size: cover;
-}
-
-
-.chat_square {
-  width: 350px;
-  height: 450px;
-  background: rgba(0, 0, 0, 0.7);
-  position: absolute;
-  bottom: 50px;
-  right: 50px;
-  border: 2px white;
-  box-shadow: 0px 0 5px rgba(255, 255, 255, 0.3);
-  border-style: solid;
-  border-color: white;
-  border-width: 1px;
-  border-radius: 5px 5px 5px 5px;
-  display: block;
-}
-
-.hidden_chat{
-  position: absolute;
-  bottom: 50px;
-  right: 50px;
-  display: none;
-}
-
-.message_field{
-  width: 350px;
-  height: 350px;
-  background: rgba(0, 0, 0, 0.7);
-  /* position: absolute; */
-  bottom: 50px;
-  right: 50px;
-  border: 0px white;
-  border-style: solid;
-  border-width: 0px;
-  background: transparent;
-  overflow: auto;
-
-}
 ::-webkit-scrollbar { /* chrome based */
   width: 0px;  /* ширина scrollbar'a */
   background: transparent;  /* опционально */
 }
 
-.news_window{
+.logotype{
   position: absolute;
-  top: 2%;
-  left: 13%;
-  
-
+  width: 100px;
+  height: 600px;
+  top: 10px;
+  left: 10px;
+  background-image: url('./images/logo_black.png');
+  background-size: 70px;
+  background-repeat: no-repeat;
 }
-.news_img{
-  width: 750px;
-  
-}
 
-.chat_input{
+.info_box{
   position: absolute;
-  bottom: 8px;
-  left: 5px;
-  margin: 0px;
-  width: 290px;
-  height: 6%;
-  /* overflow: auto; */
-  font-family: "GOST_type_A";
-  font-weight: bold;
-  font-size: large;
-  resize: none;
-  overflow: hidden;
-  color: white;
-  background: transparent;
-  font-weight: normal;
+  width: 800px;
+  height: 550px;
+  top: 9%;
+  left: 10%;
+  /* background-color: aqua; */
+  background-image: url('./images/info_window_black.png');
+  background-size: 800px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  justify-content: center;
 }
 
-.mail{
-  font-size: 65%;
-  width: 300px;
-  word-wrap: break-word;
-  padding-left: 10px;
-}
-
-.nickname{
+.info_textfield{
   position: absolute;
-  bottom: 5px;
-  right: 5px;
-  width: 335px;
-  height: 40px;
-  overflow: auto;
-  font-family: "GOST_type_A";
-  font-weight: bold;
-  font-size: 40px;
-  resize: none;
-  overflow: hidden;
-  font-weight: normal;
-  color: white;
-  background: transparent;
-}
-
-
-
-.close_chat_button{
-  position: absolute;
-  right: 5px;
-  top: 5px;
-}
-
-.chat_top{
-  /* background: rgba(0, 0, 0, 0.7);
-  box-shadow: 0px 0 5px rgba(255, 255, 255, 0.3); */
-  height: 40px;
-  position: relative;
-  background: transparent;
-  border-bottom-style: solid;
-  border-bottom-color: rgb(117, 117, 117);
-  border-bottom-width: 1px;
-
-}
-
-.text_online_chat{
-  position: absolute;
-  margin: auto;
-  left: 115px;
-}
-
-
-.regbox_style{
-  width: 400px;
+  width: 700px;
   height: 400px;
-  background: rgba(0, 0, 0, 0.7);
-  border: 2px white;
-  box-shadow: 0px 0 5px rgba(255, 255, 255, 0.3);
-  position: relative;
-  margin: auto;
-  top: 100px;
+  /* background-color: rgb(247, 0, 255); */
+  margin-left: 5%;
+  margin-top: 13%;
+  word-wrap: break-word;
+  font-size: 10px;
+  overflow: scroll;
 }
 
-@font-face {
-font-family: 'GOST_type_A';
-src: url('./fonts/gost_type_a.eot'); /* IE 9 Compatibility Mode */
-src: url('./fonts/gost_type_a.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-  url('./fonts/gost_type_a.woff2') format('woff2'), /* Super Modern Browsers */
-  url('./fonts/gost_type_a.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-  url('./fonts/gost_type_a.ttf') format('truetype'), /* Safari, Android, iOS */
-  url('./fonts/gost_type_a.svg#gost_type_a') format('svg'); /* Chrome < 4, Legacy iOS */
+.about_us{
+  position: absolute;
+  margin-top: 13px;
+  margin-left: 65px;
+  font-size: 25px;
 }
+
+.to_order{
+  position: absolute;
+  margin-top: 13px;
+  margin-left: 265px;
+  font-size: 25px;
+}
+
+.integration{
+  position: absolute;
+  margin-top: 13px;
+  margin-left: 430px;
+  font-size: 25px;
+}
+
+.about_dora{
+  position: absolute;
+  margin-top: 13px;
+  margin-left: 615px;
+  font-size: 25px;
+}
+
+
+.chat_box{
+  position: absolute;
+  width: 325px;
+  height: 550px;
+  top: 9%;
+  right: 7%;
+  z-index: -1;
+  /* background-color: aqua; */
+  background-image: url('./images/chat_window_black.png');
+  background-size: 324px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.online_chat{
+  position: absolute;
+  margin-top: 13px;
+  margin-left: 105px;
+  font-size: 25px;
+}
+
+
+
