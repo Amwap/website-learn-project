@@ -11,7 +11,9 @@ body {
 }
 h1{
   font-family: 'Lucida Sans';
+  margin: 0;
 }
+
 
 ::-webkit-scrollbar { /* chrome based */
   width: 0px;  /* ширина scrollbar'a */
@@ -46,43 +48,72 @@ h1{
 .info_textfield{
   position: absolute;
   width: 700px;
-  height: 400px;
+  height: 430px;
   /* background-color: rgb(247, 0, 255); */
-  margin-left: 5%;
-  margin-top: 13%;
+  /* z-index: 1; */
+  margin-left: 40px;
+  margin-top: 90px;
   word-wrap: break-word;
   font-size: 10px;
   overflow: scroll;
 }
 
-.about_us{
-  position: absolute;
-  margin-top: 13px;
-  margin-left: 65px;
-  font-size: 25px;
+.infobox_top{
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  /* background-color: rgb(255, 0, 242); */
 }
 
-.to_order{
-  position: absolute;
-  margin-top: 13px;
-  margin-left: 265px;
-  font-size: 25px;
+
+div.top_containers{
+  position: relative;
+  float: left;
+  /* background-color: aqua; */
+  width: 180px;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-align: center;
+  font-size: 13px;
 }
 
-.integration{
-  position: absolute;
-  margin-top: 13px;
-  margin-left: 430px;
-  font-size: 25px;
+div.top_containers:hover{
+  position: relative;
+  float: left;
+  /* background-color: aqua; */
+  width: 180px;
+  background-image: url("./images/underline_black.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-align: center;
+  font-size: 13px;
 }
 
-.about_dora{
+
+.holder{
+  width: 100%;
+  height: 100%;
+  background: transparent;
   position: absolute;
-  margin-top: 13px;
-  margin-left: 615px;
-  font-size: 25px;
+  top: 0;
+  left: 0;
+  /* background-color: aqua; */
 }
 
+.choised_category{
+  background-image: url("./images/figure_underline_black.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 .chat_box{
   position: absolute;
@@ -90,7 +121,7 @@ h1{
   height: 550px;
   top: 9%;
   right: 7%;
-  z-index: -1;
+  /* z-index: -1; */
   /* background-color: aqua; */
   background-image: url('./images/chat_window_black.png');
   background-size: 324px;
@@ -98,12 +129,74 @@ h1{
   background-repeat: no-repeat;
 }
 
-.online_chat{
-  position: absolute;
-  margin-top: 13px;
-  margin-left: 105px;
-  font-size: 25px;
+.top_chat_container{
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  /* background-color: aqua; */
+
+}
+
+.chat_text_container{
+  position: relative;
+  /* background-color: rgb(212, 0, 255); */
+  width: 180px;
+  background-image: url("./images/figure_underline_black.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  font-size: 13px;
 }
 
 
+.message_field{
+  position: relative;
+  width: 280px;
+  height: 380px;
+  /* background-color: rgb(247, 0, 255); */
+  margin-left: 20px;
+  margin-top: 28px;
+  word-wrap: break-word;
+  font-size: 10px;
+  overflow: scroll;
+}
 
+.mail_box{
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+
+.mail{
+  background-image: url("./images/system_message_black.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  /* background-color: blueviolet; */
+  width: 100%;
+  height: 30px;
+}
+
+.mail_text{
+  font-size: 15px;
+  margin-left: 10px;
+  /* background-color: rgb(43, 137, 226); */
+}
+
+.chat_input{
+  border: none;
+  height: 24px;
+  width: 279px;
+  background: transparent;
+  position: absolute;
+  bottom: 11px;
+  left: 21px;
+  font-size: 15px;
+  resize: none;
+  
+}
+textarea:focus, input:focus{
+  outline: none;
+  }
